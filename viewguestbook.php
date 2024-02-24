@@ -49,6 +49,7 @@
         $offset = ($page - 1) * $records_per_page; // ค่า offset
 
         $sql = "SELECT * FROM guestbook ORDER BY id DESC LIMIT $offset, $records_per_page";
+        
         $objQuery = mysqli_query($objCon, $sql);
         ?>
 
